@@ -1,3 +1,15 @@
+# Package renamed as `messageformat-convert`
+
+Development moved to the messageformat monorepo:
+
+https://github.com/messageformat/messageformat/tree/master/packages/convert
+
+As the built-in YAML parsing was dropped in this rename, you should use e.g.
+[`yaml`](https://eemeli.org/yaml/) to parse your string before passing it on to
+`convert()`.
+
+---
+
 # yaml-to-messageformat
 
 Converts yaml input (e.g. as used by Rails i18n) into [messageformat]-compatible
